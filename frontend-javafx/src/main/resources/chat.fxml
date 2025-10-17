@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.chatfx.ChatController">
+    <top>
+        <HBox spacing="10">
+            <padding>
+                <Insets top="10.0" right="10.0" bottom="10.0" left="10.0"/>
+            </padding>
+            <Label text="Room:"/>
+            <Label fx:id="roomLabel"/>
+        </HBox>
+    </top>
+    <center>
+        <TextArea fx:id="chatArea" editable="false"/>
+    </center>
+    <bottom>
+        <HBox spacing="8">
+            <padding>
+                <Insets top="10.0" right="10.0" bottom="10.0" left="10.0"/>
+            </padding>
+            <TextField fx:id="inputField" HBox.hgrow="ALWAYS" promptText="Type a message (use @ai to ask bot)"/>
+            <Button fx:id="aiBtn" text="Ask AI" onAction="#onAskAi"/>
+            <Button fx:id="sendBtn" text="Send" onAction="#onSend"/>
+        </HBox>
+    </bottom>
+</BorderPane>

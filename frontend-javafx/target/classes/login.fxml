@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.chatfx.LoginController">
+    <children>
+        <VBox spacing="12.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0"
+              AnchorPane.topAnchor="16.0" AnchorPane.bottomAnchor="16.0">
+            <Label text="Interactive Chat - Login"/>
+            <TextField fx:id="usernameField" promptText="Username"/>
+            <PasswordField fx:id="passwordField" promptText="Password"/>
+            <HBox spacing="10">
+                <Button text="Register" onAction="#onRegister"/>
+                <Button text="Login" onAction="#onLogin"/>
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>
